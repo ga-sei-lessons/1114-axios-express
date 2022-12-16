@@ -1,11 +1,13 @@
 // required packages
 const express = require('express')
 const axios = require('axios')
+// gives us access to our .env variables
+require('dotenv').config() 
 
 // express config
 const app = express()
 const PORT = 3001
-
+const API_KEY = process.env.API_KEY
 
 
 // routes
